@@ -7,62 +7,25 @@
     <title>Happy Birthday</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html, body {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-        #iframepage {
-            display: block;
-            width: 100vw;
-            height: 100vh;
-            border: none;
-        }
-        .iframepage {
-            -webkit-overflow-scrolling: touch;
-            overflow-x: hidden;
-            overflow-y: auto;
-        }
-        ::-webkit-scrollbar {
-            width: 0px;
-            height: 0px;
-        }
-        .float-btn {
-            position: fixed;
-            right: 8px;
-            width: 32px;
-            height: 32px;
-            z-index: 1000;
-            background: #696969;
-            border-radius: 50%;
-            text-align: center;
-            color: #ddd;
-            text-decoration: none;
-            line-height: 32px;
-            font-size: 11px;
-        }
+        *{margin:0;padding:0;box-sizing:border-box;}
+        html,body{width:100%;height:100%;overflow:hidden;}
+        #iframepage{display:block;width:100vw;height:100vh;border:none;}
+        .iframepage{-webkit-overflow-scrolling:touch;overflow-x:hidden;overflow-y:auto;}
+        ::-webkit-scrollbar{width:0px;height:0px;}
+        .float-btn{position:fixed;right:8px;width:32px;height:32px;z-index:1000;background:#696969;border-radius:50%;text-align:center;color:#ddd;text-decoration:none;line-height:32px;font-size:11px;}
     </style>
 </head>
 <body>
-    <a href="https://mp.weixin.qq.com/s/oxLqXBcLCT8ij67DjkW2kw" class="float-btn" style="top: 5%;">制作</a>
-    <a href="https://pan.xunlei.com/s/VNlDcB3ABz0oNSOEv5mpSE_tA1?pwd=97rw#" class="float-btn" style="top: 12%;">合集</a>
-    <a href="https://drive.uc.cn/s/4819fdecb8a24" class="float-btn" style="top: 19%;">代码</a>
-    <a href="https://pan.quark.cn/s/3344d23e48a8" class="float-btn" style="top: 26%;">源码</a>
-    <a href="https://shop1619956412.v.weidian.com/?userid=1619956412&spider_token=2720" class="float-btn" style="top: 33%;">红包</a>
+    <a href="https://mp.weixin.qq.com/s/oxLqXBcLCT8ij67DjkW2kw" class="float-btn" style="top:5%;"></a>
+    <a href="https://pan.xunlei.com/s/VNlDcB3ABz0oNSOEv5mpSE_tA1?pwd=97rw#" class="float-btn" style="top:12%;"></a>
+    <a href="https://drive.uc.cn/s/4819fdecb8a24" class="float-btn" style="top:19%;"></a>
+    <a href="https://pan.quark.cn/s/3344d23e48a8" class="float-btn" style="top:26%;"></a>
+    <a href="https://shop1619956412.v.weidian.com/?userid=1619956412&spider_token=2720" class="float-btn" style="top:33%;"></a>
     <iframe src="./html/login.html" id="iframepage" scrolling="yes" frameborder="0" allowfullscreen></iframe>
     <script src="js/jquery-2.1.1.min.js"></script>
     <script>
-        function changeFrameHeight(){
-            var ifr=document.getElementById('iframepage');
-            ifr.style.height=window.innerHeight+'px';
-        }
-        window.onload=changeFrameHeight;
-        window.onresize=changeFrameHeight;
+        function changeFrameHeight(){var ifr=document.getElementById('iframepage');ifr.style.height=window.innerHeight+'px';}
+        window.onload=changeFrameHeight;window.onresize=changeFrameHeight;
     </script>
 </body>
 </html>
