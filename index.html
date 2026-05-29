@@ -2,13 +2,14 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Happy Birthday</title>
+    <link rel="stylesheet" href="css/styles.css">
     <style>
         *{margin:0;padding:0;box-sizing:border-box;}
         html,body{width:100%;height:100%;overflow:hidden;}
-        #iframepage{width:100vw;height:100vh;border:none;display:block;}
-        .float-btn{position:fixed;right:8px;width:32px;height:32px;border-radius:50%;background:#696969;color:#ddd;text-align:center;line-height:32px;font-size:11px;text-decoration:none;z-index:1000;}
+        .float-btn{position:fixed;right:8px;width:32px;height:32px;z-index:1000;background:#696969;border-radius:50%;text-align:center;color:#ddd;text-decoration:none;line-height:32px;font-size:11px;}
     </style>
 </head>
 <body>
@@ -18,14 +19,31 @@
     <a href="https://pan.quark.cn/s/3344d23e48a8" class="float-btn" style="top:26%;"></a>
     <a href="https://shop1619956412.v.weidian.com/?userid=1619956412&spider_token=2720" class="float-btn" style="top:33%;"></a>
 
-    <iframe src="./html/login.html" id="iframepage" allowfullscreen></iframe>
+    <div class="htmleaf-container">
+        <div class="wrapper">
+            <div class="container">
+                <h1>生日快乐</h1>
+                <form class="form">
+                    <input id="userName" name="userName" type="text" placeholder="xx" value="妈妈">
+                    <input id="pwd" name="pwd" type="password" placeholder="密码">
+                    <button type="submit" id="login-button">进入</button>
+                </form>
+            </div>
+            <ul class="bg-bubbles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
 
-    <script>
-        function setIframeHeight(){
-            document.getElementById('iframepage').style.height=window.innerHeight+'px';
-        }
-        window.addEventListener('load',setIframeHeight);
-        window.addEventListener('resize',setIframeHeight);
-    </script>
+    <script src="js/jquery-2.1.1.min.js"></script>
 </body>
 </html>
